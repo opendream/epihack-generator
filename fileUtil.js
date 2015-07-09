@@ -88,7 +88,8 @@ exports.copy = function(siteData, src, tgt) {
       }
     }
 
-    fs.createReadStream( source ).pipe( fs.createWriteStream( targetFile ) );
+    var txt = fs.readFileSync(source, {encoding: 'utf8'});
+    fs.writeFileSync(targetFile, txt, {encoding: 'utf8'});
   }
 }
 
