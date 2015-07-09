@@ -34,7 +34,7 @@ exports.createStaticFiles = function(siteData, targetPath, templatePath) {
   }
 };
 
-exports.copy = function(siteData, src, tgt) {
+exports.transform = function(siteData, src, tgt) {
 
   copyTemplate(src, tgt);
 
@@ -45,9 +45,6 @@ exports.copy = function(siteData, src, tgt) {
       var curSource = path.join( source, file );
       if ( fs.lstatSync( curSource ).isDirectory() ) {
         var targetFolder = path.join(target, path.basename(curSource));
-        if ( !fs.existsSync( targetFolder ) ) {
-          fs.mkdirSync( targetFolder );
-        }
         copyTemplate( curSource, targetFolder );
       } else {
         copy( curSource, target);
@@ -71,7 +68,7 @@ exports.copy = function(siteData, src, tgt) {
 
     } else {
 
-      copyFileSync(source, target);
+      //copyFileSync(source, target);
 
     }
   }

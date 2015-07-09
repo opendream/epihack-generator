@@ -1,0 +1,50 @@
+[
+  {
+    "id": 100,
+    "type": "detail",
+    "title": "Medical Emergency",
+    "phone": "192"
+  },
+  {
+    "id": 101,
+    "type": "detail",
+    "title": "Fire Service",
+    "phone": "193"
+  },
+  {
+    "id": 102,
+    "type": "detail",
+    "title": "Federal Police",
+    "phone": "194"
+  },
+  {
+    "id": 103,
+    "type": "detail",
+    "title": "Federal Highway Police",
+    "phone": "191"
+  },
+  {
+    "id": 104,
+    "type": "detail",
+    "title": "State Highway Police",
+    "phone": "198"
+  },
+  {
+    "id": 105,
+    "type": "detail",
+    "title": "Rio de Janeiro Civil Police",
+    "phone": "197"
+  },
+  {
+    "id": 106,
+    "type": "detail",
+    "title": "Rio de Janeiro Military Police",
+    "phone": "190"
+  },
+  {
+    "id": 107,
+    "type": "detail",
+    "title": "Sea Rescue",
+    "phone": "(21) 2104 6119"
+  }
+]

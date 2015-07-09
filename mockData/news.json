@@ -1,0 +1,26 @@
+[
+  {
+    "id": 201,
+    "type": "detail",
+    "title": "Zika in Brazil",
+    "date": "June 11, 2015",
+    "body": "On May 14, 2015, the Ministry of Health in Brazil confirmed 16 locally transmitted cases of Zika. Local transmission means that mosquitoes in Brazil have been infected with Zika and are spreading it to people. infected with Zika and are spreading it to people. Cases have been reported in several states throughout the country. CDC recommends that travelers to Brazil protect themselves from mosquito bites.",
+    "image": "http://s0.ejesa.ig.com.br/infograficos/15/05/15-info-zika.jpg"
+  },
+  {
+    "id": 202,
+    "type": "detail",
+    "date": "May 26, 2015",
+    "title": "Dengue in Brazil",
+    "body": "According to Pan American Health Organization (PAHO), as of May 8, 2015, 745,957 cases of dengue fever, including 229 deaths, have been reported in Brazil in 2015. Travelers to Brazil should protect themselves against mosquito bites to avoid getting dengue.",
+    "image": "http://www.grupoghanem.com.br/index/wp-content/uploads/2015/01/129500-dengue02.jpg"
+  },
+  {
+    "id": 203,
+    "type": "detail",
+    "title": "Chikungunya in South America",
+    "date": "May 14, 2015",
+    "body": "In December 2013, French Guiana reported locally transmitted cases for the first time in South America. Local transmission means that mosquitoes in the area have been infected with chikungunya and are spreading it to people. CDC recommends that travelers to the South America protect themselves from mosquito bites.",
+    "image": "http://www.robsonpiresxerife.com/wp-content/uploads/2014/12/virusdengue.jpg"
+  }
+]
