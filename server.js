@@ -5,7 +5,7 @@ var fs = require('fs')
     , futil = require('./fileUtil.js');
 
 var targetPath = "./target/";
-var srcPath = "./template/";
+var srcPath = "./template2/";
 var jsonFile = "./site1.json";
 
 run_cmd("rm", ["-rf", targetPath], function() {});
@@ -27,12 +27,25 @@ function createSiteData(jsonFile) {
   })
   siteData.pageMap = pageMap;
 
-  menuPages = [];
+  var menuPages = [];
+  var shortCutMenus = [];
   _.each(siteData.menus, function(pageId) {
     menuPages.push(pageMap[pageId]);
+    shortCutMenus.push(pageMap[pageId]);
   });
+  if (shortCutMenus.length < 6) {
+    for (var i = 0; i < 6 - shortCutMenus.length; i++) {
+      shortCutMenus.push({
+        id: 1,
+        title: '',
+        body: ''
+      })
+    }
+  }
+
 
   siteData['menuPages'] = menuPages;
+  siteData['shortCutMenus'] = shortCutMenus;
 
   return siteData;
 }

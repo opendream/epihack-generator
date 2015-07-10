@@ -1,0 +1,191 @@
+.view-container .bar.bar-stable {
+    border-color: #e42012;
+    background-color: #FF4C4D;
+    background-image: linear-gradient(0deg, #e42012, #e42012 1px, transparent 1px);
+    color: #FFF;
+}
+.page--splash .view-container .nav-bar-block .bar.bar-stable,
+.page--app--home .view-container .nav-bar-block .bar.bar-stable,
+.page--app--report .view-container .nav-bar-block .bar.bar-stable {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    color: #FFF;
+}
+.view-container .bar.bar-stable .title,
+.view-container .bar-stable .button.button-clear {
+    color: #FFF;
+}
+
+.view-container .menu-left .bar.bar-stable {
+    background-image: url('../img/header.png');
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    height: 155px;
+}
+.menu-left .has-header {
+    top: 155px;
+}
+.menu-left a {
+    font-weight: bold;
+}
+.menu-left h1.title {
+    display: none;
+}
+
+.splash-image {
+    background-image: url('../img/splash.png');
+}
+.home-image {
+    background-image: url('../img/home-bg.png');
+}
+.home-image .home-menu {
+    background-image: url('../img/home-menu.png');
+    max-height: 500px;
+}
+
+.home-menu-wrapper {
+    margin: 40px;
+}
+.home-menu {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+.home-menu::after {
+    content: " ";
+    padding-top: 90%;
+    display: block;
+}
+
+/* orign from center */
+.home-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    z-index: 2;
+}
+.home-item.card {
+    background-color: transparent;
+    box-shadow: none;
+}
+.home-item .item-text-wrap {
+    display: none;
+}
+
+#home-report {
+    z-index: 3;
+}
+
+/* home menu item positions */
+#home-report    { margin-top: -16%; margin-left: -17%; width:  34%; height:  34%; } /* Center */
+#home-content-1 { margin-top: -45%; margin-left: -45%; width:  40%; height:  30%; } /* Top Left */
+#home-map       { margin-top: -45%; margin-left:   5%; width:  40%; height:  30%; } /* Top Right */
+#home-content-3 { margin-top: -12%; margin-left:  22%; width:  19%; height:  27%; } /* Right */
+#home-content-4 { margin-top:  17%; margin-left:   5%; width:  40%; height:  30%; } /* Bottom Right */
+#home-content-5 { margin-top:  17%; margin-left: -45%; width:  40%; height:  30%; } /* Bottom Left */
+#home-content-6 { margin-top: -12%; margin-left: -42%; width:  19%; height:  27%; } /* Left */
+
+
+/* report */
+.report-image {
+    background-image: url('../img/report-bg.png');
+    background-position: top;
+}
+.page--app--report .header-item.title {
+    display: none;
+}
+.page--app--report h4.title {
+    color: #FFF;
+    margin-top: 80px;
+    font-size: 25px;
+}
+.row.feeling-list {
+    display: block;
+}
+.feeling-list .card {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 40px auto;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    overflow: visible;
+}
+.feeling-list .card .icon {
+    display: none;
+}
+.feeling-list .card a {
+    background-color: transparent;
+    height: 168px;
+}
+.feeling-ans {
+    margin-top: 115px;
+    color: #FFF;
+    font-weight: bold;
+}
+.feeling-well {
+    background-image: url('../img/feeling-well.png');
+}
+.feeling-sick {
+    background-image: url('../img/feeling-sick.png');
+}
+
+.symptom-list {
+    padding: 5px;
+}
+.symptom-item {
+    display: block;
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+    overflow: visible;
+}
+
+.symptom-item label{
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+
+}
+
+.symptom-item label .checkbox {
+    position: absolute;
+    top: 90%;
+    left: 65%;
+}
+.symptom-item label .item-content {
+    display: none;
+}
+.symptom-item label::after {
+    content: " ";
+    padding-top: 100%;
+    display: block;
+}
+
+.symptom-item .item-checkbox {
+    background-color: transparent;
+    overflow: visible;
+}
+
+.symptom-cough        label {background-image: url('../img/symptom-icons/cough.png');}
+.symptom-diarrhea     label {background-image: url('../img/symptom-icons/diarrhea.png');}
+.symptom-fever        label {background-image: url('../img/symptom-icons/fever.png');}
+.symptom-headache     label {background-image: url('../img/symptom-icons/headache.png');}
+.symptom-jaw-pain     label {background-image: url('../img/symptom-icons/jaw-pain.png');}
+.symptom-joint-pain   label {background-image: url('../img/symptom-icons/joint-pain.png');}
+.symptom-mouth-sore   label {background-image: url('../img/symptom-icons/mouth-sore.png');}
+.symptom-nausea       label {background-image: url('../img/symptom-icons/nausea.png');}
+.symptom-rash         label {background-image: url('../img/symptom-icons/rash.png');}
+.symptom-runny-nose   label {background-image: url('../img/symptom-icons/runny-nose.png');}
+.symptom-sore-throat  label {background-image: url('../img/symptom-icons/sore-throat.png');}
+.symptom-sore-tongue  label {background-image: url('../img/symptom-icons/sore-tongue.png');}

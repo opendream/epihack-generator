@@ -1,20 +1,20 @@
-//<script>
+//<script>// this tag is be here, just to make an editor renderer syntax correctly.
 angular.module('epihack')
 
 .config(function ($stateProvider, $urlRouterProvider) {
 
-    $stateProvider
+        $stateProvider
 
-<% pages.forEach(function(page){ %>
-    .state('app.<%= page.id %>', {
-        url: '/contents/<%= page.id %>',
-        views: {
-            'menuContent': {
-                templateUrl: "contents/templates/<%= page.id %>.html"
-            }
-        }
-    })
-<% }); %>
+        <% pages.forEach(function(page){ %>
+            .state('app.<%= page.id %>', {
+                url: '/contents/<%= page.id %>',
+                views: {
+                    'menuContent': {
+                        templateUrl: "contents/templates/<%= page.id %>.html"
+                    }
+                }
+            })
+        <% }); %>
 
 });
 //</script>

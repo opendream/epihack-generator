@@ -6,11 +6,13 @@
 // 'epihack.controllers' is found in controllers.js
 angular.module('epihack', [
     'ionic',
+    'ui.router',
     'epihack.controllers',
+    'epihack.directives',
     'monospaced.elastic'
 ])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope, $location) {
     $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -21,6 +23,15 @@ angular.module('epihack', [
             // org.apache.cordova.statusbar required
             StatusBar.styleDefault();
         }
+    });
+    $rootScope.settings = SETTINGS;
+    $rootScope.$on('$stateChangeStart', function (event, next) {
+        console.log(next);
+        //$rootScope.$apply(function () {
+            $rootScope.pageClass = 'page--app' + next.url.split("/").join("--");
+            console.log($rootScope.pageClass);
+
+        //});
     });
 })
 
@@ -33,32 +44,19 @@ angular.module('epihack', [
         templateUrl: "templates/menu.html",
         controller: 'AppCtrl'
     })
+    .state('splash', {
+        url: "/splash",
 
+                templateUrl: "templates/splash.html",
+                controller: 'SplashCtrl'
+
+    })
     .state('app.home', {
         url: "/home",
         views: {
             'menuContent': {
-                templateUrl: "templates/home.html"
-            }
-        }
-    })
-
-    .state('app.playlists', {
-        url: "/playlists",
-        views: {
-            'menuContent': {
-                templateUrl: "templates/list.html",
-                controller: 'ListCtrl'
-            }
-        }
-    })
-
-    .state('app.single', {
-        url: "/playlists/:playlistId",
-        views: {
-            'menuContent': {
-                templateUrl: "templates/playlist.html",
-                controller: 'PlaylistCtrl'
+                templateUrl: "templates/home.html",
+                controller: 'HomeCtrl'
             }
         }
     })
@@ -79,7 +77,16 @@ angular.module('epihack', [
                 controller: 'ReportCtrl'
             }
         }
+    })
+    .state('app.map', {
+        url: "/map",
+        views: {
+            'menuContent': {
+                templateUrl: "templates/map.html",
+                controller: 'MapCtrl'
+            }
+        }
     });
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/app/report');
+    $urlRouterProvider.otherwise('/splash');
 });

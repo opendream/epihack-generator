@@ -10,7 +10,7 @@
     "start": "2015-07-01",
     "finish": "2015-07-12",
     "theme": "music",
-    "symptom": [
+    "symptoms": [
         {
             "code": "Fever",
             "name": "Fever"
@@ -60,7 +60,7 @@
             "name": "Red eyes"
         }
     ],
-    "menus": [499, 199, 200],
+    "menus": [200, 499, 199, 600, 500],
     "pages": [
 
 
@@ -223,6 +223,20 @@
             "body": "",
             "title": "Sea Rescue",
             "phone": "(21) 2104 6119"
+        },
+
+        {
+            "id": 500,
+            "type": "detail",
+            "body": "schedule...",
+            "title": "schedule"
+        },
+
+        {
+            "id": 600,
+            "type": "detail",
+            "body": "about...",
+            "title": "about"
         }
     ]
 }

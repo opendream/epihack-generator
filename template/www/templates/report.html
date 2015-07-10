@@ -1,24 +1,27 @@
 <ion-view view-title="Your Feeling">
-    <ion-content>
+    <div  class="bg-full-image report-image relative">
 
-        <h4 class="title text-center">
-            Are you feeling well today ?
-        </h4>
-        <div class="item item-text-wrap row">
-            <div class="col card text-center">
-                <a ng-click="thank()" class="item">
-                    <i class="icon ion-happy-outline feeling-icon"></i>
-                    <br />
-                    Yes
-                </a>
+        <ion-content scroll="false">
+
+            <h4 class="title text-center">
+                How are you feeling ?
+            </h4>
+            <div class="row feeling-list">
+                <div class="col card text-center feeling-well">
+                    <a ng-click="thank()" class="item">
+                        <i class="icon ion-happy-outline feeling-icon"></i>
+                        <br />
+                        <div class="feeling-ans">I'm well</div>
+                    </a>
+                </div>
+                <div class="col card text-center feeling-sick">
+                    <a href="#/app/report/form" class="item">
+                        <i class="icon ion-sad-outline feeling-icon"></i>
+                        <br />
+                        <div class="feeling-ans">I'm sick</div>
+                    </a>
+                </div>
             </div>
-            <div class="col card text-center">
-                <a href="#/app/report/form" class="item">
-                    <i class="icon ion-sad-outline feeling-icon"></i>
-                    <br />
-                    No
-                </a>
-            </div>
-        </div>
-    </ion-content>
+        </ion-content>
+    </div>
 </ion-view>

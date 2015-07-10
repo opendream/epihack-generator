@@ -3,3 +3,36 @@
 .feeling-icon {
     font-size: 40px
 }
+.bg-full-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.splash-next {
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.footer-no-height {
+    height: 0;
+    padding: 0;
+}
+
+.page-meta {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #FFF;
+    text-align: left;
+}
+
+/* Map */
+map {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

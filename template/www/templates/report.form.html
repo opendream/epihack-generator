@@ -1,10 +1,16 @@
 <ion-view view-title="Report">
     <ion-content>
-        <h4 class="text-center">Are you experience any of these symptoms ?</h4>
+        <h4 class="text-center item item-text-wrap">Are you experience any of these symptoms ?</h4>
         <form ng-submit="doReport(form)">
             <div class="list">
-
-                <ion-checkbox ng-repeat="symptom in symptoms track by $index" ng-model="report.symptoms[$index]" ng-checked="symptom.code == report.symptoms[$index]">{{ symptom.name }}</ion-checkbox>
+                <div class="symptom-list">
+                    <div class="symptom-item symptom-{{ symptom.code }}" ng-repeat="symptom in symptoms track by $index">
+                        <ion-checkbox ng-model="report.symptoms[$index]"
+                                      ng-checked="symptom.code == report.symptoms[$index]">
+                            {{ symptom.name }}
+                        </ion-checkbox>
+                    </div>
+                </div>
 
                 <div class="item item-divider">
                     When do you experience symptom ?

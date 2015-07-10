@@ -3,7 +3,15 @@
         <ion-list>
             <% page.items.forEach(function(item){ %>
             <ion-item href="#/app/contents/<%= item %>">
-                <%= pageMap[item].title %>
+                <div class="row">
+                    <div class="col-90"><%= pageMap[item].title %></div>
+                    <div class="col-10">
+                        <% if (pageMap[item].phone) { %>
+                        <a class="button button-positive" href="telno:<%= pageMap[item].phone %>">Tel</a>
+                        <% } %>
+                    </div>
+                </div>
+
             </ion-item>
             <% }); %>
         </ion-list>

@@ -61,6 +61,7 @@ exports.transform = function(siteData, src, tgt) {
       var finalTargetName = path.join(target, finalFileName);
 
       var content = fs.readFileSync(source, {encoding: 'utf8'});
+      console.log(content);
       var template = EJS.compile(content);
       var html = template(siteData);
 
